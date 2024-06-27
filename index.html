@@ -3,35 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezeptseite</title>
+    <title>Essensplan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Essensgerichte</h1>
-        <div class="dish" data-recipe-id="linsensalat-recipe">
-            <h2>Linsensalat</h2>
-            <img src="essensplan/linsensalat-7.jpg" alt="Linsensalat">
+        <h1>Essensplan</h1>
+        
+        <!-- Linsensalat Rezept -->
+        <div class="recipe">
+            <h2 onclick="toggleRecipe('linsensalat')">Linsensalat mit Lauchzwiebeln, Tomaten und Feta-Käse</h2>
+            <div id="linsensalat" class="recipe-details">
+                <img src="linsensalat-7.jpg" alt="Linsensalat">
+                <h3>Zutaten:</h3>
+                <ul>
+                    <li>2 Dose Linsen</li>
+                    <li>10 Lauchzwiebeln</li>
+                    <li>6 Tomaten</li>
+                    <li>400 g Feta-Käse</li>
+                    <li>8 EL Balsamico</li>
+                    <li>4 EL Olivenöl</li>
+                    <li>1 EL Senf</li>
+                    <li>Salz und Pfeffer nach Belieben</li>
+                    <li>1 Bund Petersilie</li>
+                </ul>
+                <h3>Zubereitung:</h3>
+                <p>Die Linsen abtropfen lassen.</p>
+                <p>Die Lauchzwiebeln putzen und in feine Ringe schneiden.</p>
+                <p>Die Tomaten waschen, klein schneiden.</p>
+                <p>Die Petersilie zupfen, waschen, klein hacken.</p>
+                <p>Den Schafskäse würfeln.</p>
+                <p>Alles vorsichtig mit den Linsen mischen.</p>
+                <p>Essig, Salz, Pfeffer, Senf und Öl zum Dressing verrühren und zu den Salatzutaten geben.</p>
+                <p>Petersilie darüber streuen.</p>
+                <p>Gut durchmischen und ca. eine Stunde durchziehen lassen.</p>
+                <p>Passt gut zu Gegrilltem oder einfach nur solo mit einem Brot.</p>
+            </div>
         </div>
-        <div id="linsensalat-recipe" class="recipe">
-            <h3>Rezept für Linsensalat:</h3>
-            <ul>
-                <li>200g grüne Linsen</li>
-                <li>1 rote Zwiebel, fein gehackt</li>
-                <li>1 Gurke, gewürfelt</li>
-                <li>2 Tomaten, gewürfelt</li>
-                <li>1 rote Paprika, gewürfelt</li>
-                <li>3 EL Olivenöl</li>
-                <li>2 EL Balsamico-Essig</li>
-                <li>Salz und Pfeffer nach Geschmack</li>
-                <li>Frische Petersilie, gehackt</li>
-            </ul>
-            <p>
-                <strong>Zubereitung:</strong><br>
-                Linsen nach Packungsanweisung kochen und abkühlen lassen. In einer großen Schüssel die Linsen mit Zwiebeln, Gurken, Tomaten und Paprika vermischen. Olivenöl und Balsamico-Essig hinzufügen und gut vermengen. Mit Salz und Pfeffer abschmecken und vor dem Servieren mit frischer Petersilie bestreuen.
-            </p>
+
+        <!-- Chili sin Carne Rezept -->
+        <div class="recipe">
+            <h2 onclick="toggleRecipe('chiliSinCarne')">Chili sin Carne</h2>
+            <div id="chiliSinCarne" class="recipe-details">
+                <img src="Chili-sin-Carne-mit-Linsen-trickytine-7.webp" alt="Chili sin Carne">
+                <h3>Zutaten:</h3>
+                <ul>
+                    <li>1 Zwiebel</li>
+                    <li>2 Knoblauchzehen</li>
+                    <li>Butter oder Pflanzenöl zum Anschwitzen</li>
+                    <li>2 mittelgroße Kartoffeln</li>
+                    <li>250 g rote Linsen</li>
+                    <li>1 ¼ Liter Gemüsebrühe</li>
+                    <li>1 Dose Kidneybohnen (ca. 400 g)</li>
+                    <li>1 Dose Mais (ca. 300 g)</li>
+                    <li>1 Päckchen passierte Tomaten (ca. 500 g)</li>
+                    <li>Salz und Pfeffer nach Belieben</li>
+                    <li>Currypulver nach Belieben</li>
+                    <li>Paprikapulver nach Belieben</li>
+                    <li>Chilipulver nach Belieben</li>
+                </ul>
+                <h3>Zubereitung:</h3>
+                <p>Zwiebel und Knoblauch klein schneiden und in einem großen Topf in etwas Butter oder veganem Pflanzenöl anschwitzen.</p>
+                <p>Die Kartoffeln schälen, in kleine Würfel schneiden und dazugeben.</p>
+                <p>Die roten Linsen kurz abbrausen und ebenfalls in den Topf geben.</p>
+                <p>Alles mit der Gemüsebrühe ablöschen und ca. 20 - 25 Minuten köcheln lassen.</p>
+                <p>Die Kartoffeln müssen durch sein und die Linsen schön weich zerfallen.</p>
+                <p>Kidneybohnen und Mais abtropfen lassen, unterrühren und gut heiß werden lassen.</p>
+                <p>Nach Belieben die Suppe mit den passierten Tomaten strecken - ich mag sie lieber etwas dicker und nehme daher nur einen guten Schuss (für eine schöne "Farbe").</p>
+                <p>Die Suppe mit etwas Salz (Vorsicht wegen der meist schon gut gesalzenen Gemüsebrühe), Pfeffer, Curry-, Paprika- und Chilipulver nach Geschmack kräftig würzen.</p>
+            </div>
+        </div>
+
+        <!-- Pesto Rezept -->
+        <div class="recipe">
+            <h2 onclick="toggleRecipe('pesto')">Pesto</h2>
+            <div id="pesto" class="recipe-details">
+                <img src="baerlauch-pesto-1024x683.jpeg" alt="Pesto">
+                <h3>Zutaten:</h3>
+                <ul>
+                    <li>1 Bund Basilikum</li>
+                    <li>30 g Pinienkerne, geröstet</li>
+                    <li>30 g Parmesan</li>
+                    <li>1 Knoblauchzehe</li>
+                    <li>Olivenöl</li>
+                    <li>Salz und Pfeffer</li>
+                </ul>
+                <h3>Zubereitung:</h3>
+                <p>Alle Zutaten entweder pürieren oder in einem Mörser fein verreiben.</p>
+                <p>Olivenöl hinzufügen.</p>
+                <p>Das Rezept ergibt ca. 120 g Pesto.</p>
+                <p>Reicht für ca. 20 Crostini oder 500 g Nudeln.</p>
+            </div>
+        </div>
+
+        <!-- Risotto Rezept -->
+        <div class="recipe">
+            <h2 onclick="toggleRecipe('risotto')">Risotto</h2>
+            <div id="risotto" class="recipe-details">
+                <img src="parmesan-risotto.jpg" alt="Risotto">
+                <h3>Zutaten:</h3>
+                <ul>
+                    <li>300 g Carnaroli-Reis, superfino</li>
+                    <li>1 Schalotte, klein geschnitten</li>
+                    <li>1 ½ Liter Hühnerbrühe, kein Instant</li>
+                    <li>40 g Butter</li>
+                    <li>100 ml Weißwein</li>
+                    <li>1 EL Safranfäden, mindestens 30 Fäden</li>
+                    <li>50 g kalte Butter</li>
+                    <li>75 g echter Parmesan, frisch gerieben</li>
+                    <li>Salz und Pfeffer nach Belieben</li>
+                </ul>
+                <h3>Zubereitung:</h3>
+                <p>Schalotte in Butter anschwitzen.</p>
+                <p>Reis zugeben und wenden, bis jedes Korn von Butter benetzt ist.</p>
+                <p>Wein angießen und vollständig verdampfen lassen.</p>
+                <p>Safranfäden mörsern, mit lauwarmem Wasser vermischen und zugeben.</p>
+                <p>Brühe kellenweise zugeben und 17-18 Minuten köcheln lassen.</p>
+                <p>Am Ende kalte Butter und Parmesan einrühren.</p>
+                <p>Mit Salz und Pfeffer abschmecken.</p>
+                <p>Risotto in tiefen Tellern servieren.</p>
+            </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
